@@ -7,7 +7,6 @@ def to_camel_case(str)
   # 實作寫在這裡
   # "book_store" => ["book", "store"] => ["book", "Store"] => "bookStore"
   return str.split("_").map.with_index { |element, index| index == 0 ? element : element.capitalize }.join
-  
 end
 
 puts to_camel_case("book") # book
