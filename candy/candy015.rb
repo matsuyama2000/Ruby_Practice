@@ -9,9 +9,11 @@ def split_string(str)
   # 實作寫在這裡
 
   # creates an array that contains all the two-character substrings
+  # "abcdefg" => ["ab", "cd", "ef"]
   arr = str.scan(/.{2}/)
-  
+
   # if the length of the string is odd, append the last character of the string with "_" to the array
+  # ["ab", "cd", "ef", "g_"]
   if str.length.odd?
     arr << str[-1] + "_"
   end
