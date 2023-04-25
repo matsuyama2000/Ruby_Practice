@@ -12,7 +12,7 @@ def unique_order(sequence)
   end
   
   # passing in an empty array ([]) as the initial value for the accumulator
-  # appends element to the acc only if the last element in the acc is not equal to element
+  # append current element to the acc only if the last element in the acc is not equal to current element
   sequence.each_with_object([]) { |element, acc| acc << element unless acc.last == element }
 end
 
