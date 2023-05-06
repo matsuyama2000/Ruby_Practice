@@ -5,12 +5,15 @@
 def find_different(numbers)
   # 實作寫在這裡
   # find the unique elements in numbers array
+  # [1, 3]
   unique_nums = numbers.uniq
 
   # find the frequency of each unique element
+  # [7, 1]
   frequency = unique_nums.map { |n| numbers.count(n) }
 
-  # return the unique element with frequency 1
+  # find the index of the first occurrence of 1 in the frequency arr => 1
+  # unique_nums[1] => 3
   return unique_nums[frequency.index(1)]
 end
 
