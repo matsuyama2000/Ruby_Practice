@@ -6,8 +6,12 @@
 
 def find_odd_elm(numbers)
   # 實作寫在這裡
-  # return the first element in the array for which the count is odd
-  return numbers.find { |n| numbers.count(n).odd? }
+  # loop through all unique elements in the array
+  numbers.uniq.each do |n|
+    # check if the count of the current n is odd
+    # return the current n if it appears an odd number of times
+    return n if numbers.count(n).odd?
+  end
 end
 
 puts find_odd_elm([1, 1, 2]) # 印出 2
