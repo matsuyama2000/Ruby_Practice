@@ -1,6 +1,9 @@
 # 找出離某個數字最近的平方數
+
 def nearest_sq(n)
   # 實作內容
+  # 開根號也可以寫成 n ** 0.5
+  Math::sqrt(n).round ** 2
 end
 
 puts nearest_sq(1)    # 1
