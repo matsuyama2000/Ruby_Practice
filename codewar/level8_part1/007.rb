@@ -1,5 +1,6 @@
 def monkey_count(n)
   # 實作內容
+  (1..n).to_a
 end
 
 p monkey_count(5)  # 印出 [1, 2, 3, 4, 5]

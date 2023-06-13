@@ -1,5 +1,6 @@
 def count_sheep(num)
   # 實作內容
+  (1..num).map { |i| "#{i}sheep..." }.join
 end
 
 puts count_sheep(1)  # 印出 1 sheep...

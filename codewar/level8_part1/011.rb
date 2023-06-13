@@ -2,6 +2,7 @@
 
 def squareSum(numbers)
   # 實作內容
+  Array(numbers).reduce(0){ |acc, cv| acc + cv ** 2 }
 end
 
 puts squareSum(2)          # 印出 4

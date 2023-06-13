@@ -1,5 +1,6 @@
 def solution(sentence)
   # 實作內容
+  sentence.split.reverse.join(" ")
 end
 
 puts solution("The greatest victory is that which requires no battle") 
