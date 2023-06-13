@@ -2,6 +2,8 @@
 
 def remove_char(s)
   # 實作內容
+  # s.slice(1, s.length-2)
+  s[1..-2]
 end
 
 p remove_char('eloquent')  # "loquen"

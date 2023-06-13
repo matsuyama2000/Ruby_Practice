@@ -3,6 +3,8 @@
 
 def correct(string)
   # 實作內容
+  # string.gsub(/[510]/, "5" => "S", "1" => "I", "0" => "O")
+  string.gsub("510", "SIO")
 end
 
 puts correct("L0ND0N")     # LONDON
