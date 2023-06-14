@@ -1,5 +1,8 @@
 class Ghost
   # 實作內容
+  def color
+    ["white", "yellow", "purple", "red"].sample
+  end
 end
 
 ghost = Ghost.new

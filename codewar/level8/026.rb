@@ -1,5 +1,13 @@
 class Ball
   # 實作內容
+  attr_reader :ball_type
+  def initialize(ball_type = 'regular')
+    @ball_type = ball_type
+  end
+
+  # def ball_type
+  #   @ball_type
+  # end
 end
 
 ball1 = Ball.new

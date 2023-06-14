@@ -1,5 +1,11 @@
+# 請計算在幾年後，爸爸的年紀是兒子的二倍？
+
 def twice_as_old(father, son)
   # 實作內容
+  # father + n = 2 * (son + n)
+  # father + n = 2son + 2n
+  # father - 2son = n
+  father - 2 * son
 end
 
 puts twice_as_old(36,7)   # 22
