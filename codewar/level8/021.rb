@@ -2,7 +2,8 @@
 
 def give_me_five
   # 實作內容
-  "f".ord - "a".ord
+  # "f".ord - "a".ord
+  "emily".length
 end
 
 puts give_me_five  # 5

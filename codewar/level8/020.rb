@@ -2,6 +2,19 @@
 
 def check_exam(correct, answer)
   # 實作內容
+  score = correct.zip(answer).map do |c, a|
+    case a
+    when c
+      4
+    when ""
+      0
+    else
+      -1
+    end
+  end.sum
+
+  # (score > 0) ? score : 0
+  [score, 0].max
 end
 
 puts check_exam(["a", "a", "b", "b"], ["a", "c", "b", "d"])  # 6
