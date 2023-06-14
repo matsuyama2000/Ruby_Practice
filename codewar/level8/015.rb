@@ -2,6 +2,7 @@
 
 def count_sheeps(array)
   # 實作內容
+  array.count(true)
 end
 
 array1 = [true,  true,  true,  false,

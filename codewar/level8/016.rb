@@ -2,6 +2,18 @@
 
 def sum_array(arr)
   # 實作內容
+  arr = Array(arr)
+  # if arr.length > 2
+  #   arr -= [arr.max, arr.min]
+  #   arr.sum
+  # else
+  #   0
+  # end
+  if arr.count > 2
+    arr.sort[1..-2].sum
+  else
+    0
+  end
 end
 
 puts sum_array(nil)                      # 0

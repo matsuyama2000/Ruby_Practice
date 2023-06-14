@@ -2,6 +2,14 @@
 
 def square_or_square_root(array)
   # 實作內容
+  array.map do |i|
+    if Math.sqrt(i) % 1 == 0
+      # Integer.sqrt(i)
+      Math.sqrt(i).to_i
+    else
+      i ** 2
+    end
+  end
 end
 
 p square_or_square_root([4, 3, 9, 7, 2, 1])      # [2, 9, 3, 49, 4, 1]

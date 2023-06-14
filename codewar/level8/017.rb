@@ -3,6 +3,7 @@
 def merge_arrays(a, b)
   # 實作內容
   # a.zip(b).flatten.uniq
+  # (a + b).sort.uniq
   (a | b).sort
 end
 

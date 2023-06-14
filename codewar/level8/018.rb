@@ -2,7 +2,7 @@
 
 def abbrev_name(name)
   # 實作內容
-  name.split(" ").map { |i| i[0] }.join(".")
+  name.split(" ").map { |i| i[0].capitalize }.join(".")
 end
 
 puts abbrev_name("Sam Harris")      # S.H
