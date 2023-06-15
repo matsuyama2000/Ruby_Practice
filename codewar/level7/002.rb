@@ -2,6 +2,7 @@
 
 def my_languages(scores)
   # 實作內容
+  scores.select { |subject, score| score >= 60 }.keys
 end
 
 RSpec.describe do

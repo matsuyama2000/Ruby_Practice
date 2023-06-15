@@ -2,6 +2,11 @@
 
 def find_missing_numbers(array)
   # 實作內容
+  if array.count < 2
+    []
+  else
+    (array.min..array.max).to_a - array
+  end
 end
 
 RSpec.describe do
