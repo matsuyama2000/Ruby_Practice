@@ -4,6 +4,7 @@
 def correct(string)
   # 實作內容
   # string.gsub(/[510]/, "5" => "S", "1" => "I", "0" => "O")
+  # string.tr("510", "SIO")
   string.gsub("510", "SIO")
 end
 

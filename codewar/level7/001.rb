@@ -2,6 +2,7 @@
 
 def find_shortest(str)
   # 實作內容
+  str.split(' ').map { |i| i.length }.min
 end
 
 RSpec.describe do

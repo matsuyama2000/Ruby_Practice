@@ -1,5 +1,6 @@
 def monkey_count(n)
   # 實作內容
+  # [*1..n]
   (1..n).to_a
 end
 

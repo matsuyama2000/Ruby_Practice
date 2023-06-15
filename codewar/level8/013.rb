@@ -2,6 +2,7 @@
 
 def positive_sum(arr)
   # 實作內容
+  # arr.select { |i| i.positive? }.sum
   arr.select { |i| i > 0 }.sum
 end
 
