@@ -2,6 +2,7 @@
 
 def vowel_count(string)
   # 實作內容
+  string.count('aeiou')
 end
 
 RSpec.describe do

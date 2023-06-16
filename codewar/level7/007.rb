@@ -2,6 +2,7 @@
 
 def accum(s)
   # 實作內容
+  s.chars.map.with_index { |element, index| (element * (index + 1)).capitalize}.join('-')
 end
 
 RSpec.describe do

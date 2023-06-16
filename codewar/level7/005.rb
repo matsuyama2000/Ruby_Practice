@@ -2,6 +2,8 @@
 
 def split_the_bill(bill)
   # 實作內容
+  avg_per_person = bill.values.sum / bill.keys.count.to_f
+  bill.transform_values { |value| value - avg_per_person }
 end
 
 RSpec.describe do

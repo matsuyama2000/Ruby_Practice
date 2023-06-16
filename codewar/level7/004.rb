@@ -2,6 +2,7 @@
 
 def printer_error(s)
   # 實作內容
+  "#{s.scan(/[^a-m]/).count}/#{s.length}"
 end
 
 RSpec.describe do

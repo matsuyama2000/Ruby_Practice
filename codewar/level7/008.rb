@@ -2,6 +2,11 @@
 
 def get_middle(string)
   # 實作內容
+  len = string.length
+  if len <= 2
+    string
+  else len.odd? ? string[len / 2] : string[ len / 2 - 1, 2]
+  end
 end
 
 RSpec.describe do
