@@ -7,7 +7,7 @@ def make_negative(num)
 end
 
 describe "Solution" do
-  it "Fixed tests" do
-    Test.assert_equals(make_negative(42), -42)
+  it "should make a number negative" do
+    expect(make_negative(42)).to eq -42
   end
 end

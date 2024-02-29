@@ -18,12 +18,12 @@ class String
 end
 
 describe "Is a string uppercase?" do
-  it "should work for the examples provided in the description" do
-    Test.expect "c".is_upcase? == false
-    Test.expect "C".is_upcase? == true
-    Test.expect "hello I AM DONALD".is_upcase? == false
-    Test.expect "HELLO I AM DONALD".is_upcase? == true
-    Test.expect "ACSKLDFJSgSKLDFJSKLDFJ".is_upcase? == false
-    Test.expect "ACSKLDFJSGSKLDFJSKLDFJ".is_upcase? == true
+  it "should correctly identify uppercase strings" do
+    expect('c'.is_upcase?).to eq false
+    expect('C'.is_upcase?).to eq true
+    expect('hello I AM DONALD'.is_upcase?).to eq false
+    expect('HELLO I AM DONALD'.is_upcase?).to eq true
+    expect('ACSKLDFJSgSKLDFJSKLDFJ'.is_upcase?).to eq false
+    expect('ACSKLDFJSGSKLDFJSKLDFJ'.is_upcase?).to eq true
   end
 end

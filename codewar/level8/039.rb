@@ -12,10 +12,10 @@ def basic_op(operator, value1, value2)
 end
 
 describe "Basic tests" do
-  it "should pass fixed tests" do
-   Test.assert_equals(basic_op('+', 4, 7), 11)
-   Test.assert_equals(basic_op('-', 15, 18), -3)
-   Test.assert_equals(basic_op('*', 5, 5), 25)
-   Test.assert_equals(basic_op('/', 49, 7), 7)
- end
+  it "should perform basic arithmetic operations" do
+    expect(basic_op('+', 4, 7)).to eq 11
+    expect(basic_op('-', 15, 18)).to eq -3
+    expect(basic_op('*', 5, 5)).to eq 25
+    expect(basic_op('/', 49, 7)).to eq 7
+  end
 end

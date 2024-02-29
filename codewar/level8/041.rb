@@ -9,11 +9,11 @@ def solution(str)
   str.reverse
 end
 
-describe "Fixed tests" do
-  it "should pass fixed tests" do
-    Test.assert_equals(solution('world'), 'dlrow')
-    Test.assert_equals(solution('hello'), 'olleh')
-    Test.assert_equals(solution(''), '')
-    Test.assert_equals(solution('h'), 'h')
+describe "Solution" do
+  it "should reverse a string" do
+    expect(solution('world')).to eq 'dlrow'
+    expect(solution('hello')).to eq 'olleh'
+    expect(solution('')).to eq ''
+    expect(solution('h')).to eq 'h'
   end
 end

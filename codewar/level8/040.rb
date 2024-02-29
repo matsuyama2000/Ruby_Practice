@@ -11,7 +11,7 @@ end
 
 describe "summation" do
   it "should return the correct total" do
-    Test.assert_equals(summation(1), 1)
-    Test.assert_equals(summation(8), 36)
+    expect(summation(1)).to eq 1
+    expect(summation(8)).to eq 36
   end
 end

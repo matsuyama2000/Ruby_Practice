@@ -7,11 +7,11 @@ def string_to_array(string)
 end
 
 describe "Solution" do
-  it "Fixed tests" do
-    Test.assert_equals(string_to_array("Robin Singh"), ["Robin", "Singh"])
-    Test.assert_equals(string_to_array("CodeWars"), ["CodeWars"])
-    Test.assert_equals(string_to_array("I love arrays they are my favorite"), ["I", "love", "arrays", "they", "are", "my", "favorite"])
-    Test.assert_equals(string_to_array("1 2 3"), ["1", "2", "3"])
-    Test.assert_equals(string_to_array(""), [])
+  it "should convert strings to arrays of words" do
+    expect(string_to_array("Robin Singh")).to eq ["Robin", "Singh"]
+    expect(string_to_array("CodeWars")).to eq ["CodeWars"]
+    expect(string_to_array("I love arrays they are my favorite")).to eq ["I", "love", "arrays", "they", "are", "my", "favorite"]
+    expect(string_to_array("1 2 3")).to eq ["1", "2", "3"]
+    expect(string_to_array("")).to eq []
   end
 end

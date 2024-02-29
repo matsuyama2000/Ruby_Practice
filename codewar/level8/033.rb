@@ -9,12 +9,12 @@ def lovefunc( flower1, flower2 )
   (flower1 + flower2).odd?
 end
 
-describe "Basic Tests" do
-  it "should pass basic tests" do
-    Test.assert_equals(lovefunc(1,4), true)
-    Test.assert_equals(lovefunc(2,2), false)
-    Test.assert_equals(lovefunc(0,1), true)
-    Test.assert_equals(lovefunc(0,0), false)
-    Test.assert_equals(lovefunc(5,5), false)
+describe "Lovefunc" do
+  it "should determine relational compatibility" do
+    expect(lovefunc(1, 4)).to eq true
+    expect(lovefunc(2, 2)).to eq false
+    expect(lovefunc(0, 1)).to eq true
+    expect(lovefunc(0, 0)).to eq false
+    expect(lovefunc(5, 5)).to eq false
   end
 end

@@ -7,10 +7,12 @@ def maps(x)
   x.map { |i| i * 2 }
 end
 
-describe "maps" do
-  it "Fixed tests" do
-    Test.assert_equals(maps([1, 2, 3]), [2, 4, 6])
-    Test.assert_equals(maps([4, 1, 1, 1, 4]), [8, 2, 2, 2, 8])
-    Test.assert_equals(maps([2, 2, 2, 2, 2, 2]), [4, 4, 4, 4, 4, 4])
+describe "Solution" do
+  it "should find the sum of squared elements" do
+    expect(maps([1, 2])).to eq [2, 4]
+    expect(maps([0, 3, 4, 5])).to eq [0, 6, 8, 10]
+    expect(maps([])).to eq []
+    expect(maps([-1, -2])).to eq [-2, -4]
+    expect(maps([-1, 0, 1])).to eq [-2, 0, 2]
   end
 end
