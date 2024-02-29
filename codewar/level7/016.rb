@@ -5,10 +5,10 @@ def longest(a1, a2)
   (a1+a2).chars.uniq.sort.join
 end
 
-describe("longest") do
-  it("Basic tests") do
-      Test.assert_equals(longest("aretheyhere", "yestheyarehere"), "aehrsty")
-      Test.assert_equals(longest("loopingisfunbutdangerous", "lessdangerousthancoding"), "abcdefghilnoprstu")
-      Test.assert_equals(longest("inmanylanguages", "theresapairoffunctions"), "acefghilmnoprstuy")
-  end 
+describe "longest" do
+  it "should find the longest common subsequence" do
+    expect(longest("aretheyhere", "yestheyarehere")).to eq "aehrsty"
+    expect(longest("loopingisfunbutdangerous", "lessdangerousthancoding")).to eq "abcdefghilnoprstu"
+    expect(longest("inmanylanguages", "theresapairoffunctions")).to eq "acefghilmnoprstuy"
+  end
 end

@@ -16,11 +16,11 @@ end
 
 describe "Solution" do
   it "Fixed tests" do
-    Test.assert_equals(validate_pin(""),false)
-    Test.assert_equals(validate_pin("1"),false)
-    Test.assert_equals(validate_pin("1111"),true)
-    Test.assert_equals(validate_pin("123456"),true)
-    Test.assert_equals(validate_pin("1234567890"),false)
-    Test.assert_equals(validate_pin("12"),false)
+    expect(validate_pin("")).to eq false
+    expect(validate_pin("1")).to eq false
+    expect(validate_pin("1111")).to eq true
+    expect(validate_pin("123456")).to eq true
+    expect(validate_pin("1234567890")).to eq false
+    expect(validate_pin("12")).to eq false
   end
 end

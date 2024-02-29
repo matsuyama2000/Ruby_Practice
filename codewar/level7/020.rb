@@ -19,9 +19,9 @@ end
 
 describe "get_sum" do
   it "Example tests" do
-    Test.assert_equals(get_sum(0,1),1)
-    Test.assert_equals(get_sum(0,-1),-1)
-    Test.assert_equals(get_sum(1,2),3)
-    Test.assert_equals(get_sum(5,-1),14)
+    expect(get_sum(0, 1)).to eq 1
+    expect(get_sum(0, -1)).to eq -1
+    expect(get_sum(1, 2)).to eq 3
+    expect(get_sum(5, -1)).to eq 14
   end
 end
