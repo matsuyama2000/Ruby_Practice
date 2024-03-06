@@ -2,6 +2,12 @@
 
 def maskify(card_number)
   # 實作內容
+  len = card_number.length
+  if len >= 4
+    card_number[0...(len - 4)].gsub(/\d/, '#') + card_number[-4..-1]
+  else
+    card_number
+  end
 end
 
 RSpec.describe do
