@@ -2,6 +2,19 @@
 
 class Block
   # 實作內容
+  attr_reader :width, :length, :height
+
+  def initialize(array)
+    @width, @length, @height = array
+  end
+
+  def volume
+    width * length * height
+  end
+
+  def surface_area
+    (width * length + length * height + width * height) * 2
+  end
 end
 
 RSpec.describe do

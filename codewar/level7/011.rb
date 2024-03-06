@@ -2,6 +2,14 @@
 
 def is_sorted_and_how(arr)
   # 實作內容
+  case arr
+  when arr.sort
+    'yes, ascending'
+  when arr.sort.reverse
+    'yes, descending'
+  else
+    'no'
+  end
 end
 
 RSpec.describe do
