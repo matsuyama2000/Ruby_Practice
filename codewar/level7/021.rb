@@ -12,7 +12,7 @@ def filter_list(l)
   l.select { |x| x.class != String }
 end
 
-describe "Filter List" do
+RSpec.describe "Filter List" do
   it "Fixed Tests" do
     expect(filter_list([1,2,'a','b'])).to eq([1,2])
     expect(filter_list([1,'a','b',0,15])).to eq([1,0,15])

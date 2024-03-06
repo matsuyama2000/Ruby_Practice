@@ -5,7 +5,8 @@ def get_middle(string)
   len = string.length
   if len <= 2
     string
-  else len.odd? ? string[len / 2] : string[ len / 2 - 1, 2]
+  else 
+    len.odd? ? string[len / 2] : string[len / 2 - 1, 2]
   end
 end
 

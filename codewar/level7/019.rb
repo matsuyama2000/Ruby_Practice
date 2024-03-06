@@ -1,20 +1,14 @@
 # Vowel Count
-
-# Return the number (count) of vowels in the given string.
-
 # We will consider a, e, i, o, u as vowels for this Kata (but not y).
-
 # The input string will only consist of lower case letters and/or spaces.
 
 # Solution 1
 def get_count(input_str)
-  #your code here
   input_str.count("aeiou")
 end
 
 # Solution 2
 def get_count(input_str)
-  #your code here
   counts = {}
   # Define characters to count
   characters = ['a', 'e', 'i', 'o', 'u']
@@ -28,7 +22,7 @@ def get_count(input_str)
   counts.values.sum
 end
 
-describe "Solution" do
+RSpec.describe "Solution" do
   it "Fixed tests" do
     expect(get_count("abracadabra")).to eq 5
     expect(get_count("")).to eq 0

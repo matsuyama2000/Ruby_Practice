@@ -6,7 +6,7 @@ def string_to_array(string)
   string.split
 end
 
-describe "Solution" do
+RSpec.describe "Solution" do
   it "should convert strings to arrays of words" do
     expect(string_to_array("Robin Singh")).to eq ["Robin", "Singh"]
     expect(string_to_array("CodeWars")).to eq ["CodeWars"]

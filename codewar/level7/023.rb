@@ -1,9 +1,5 @@
 # Regex validate PIN code
 
-# ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
-
-# If the function is passed a valid PIN string, return true, else return false.
-
 # Examples (Input --> Output)
 # "1234"   -->  true
 # "12345"  -->  false
@@ -14,7 +10,7 @@ def validate_pin(pin)
   (pin.length == 4 || pin.length == 6) && pin.match?(/\A\d+\z/)
 end
 
-describe "Solution" do
+RSpec.describe "Solution" do
   it "Fixed tests" do
     expect(validate_pin("")).to eq false
     expect(validate_pin("1")).to eq false

@@ -5,7 +5,7 @@ def square_sum(numbers)
   numbers.empty? ? 0 : numbers.reduce(0) { |sum, x| x ** 2 + sum }
 end
 
-describe "Solution" do
+RSpec.describe "Solution" do
   it "should find the sum of squared elements" do
     expect(square_sum([1, 2])).to eq 5
     expect(square_sum([0, 3, 4, 5])).to eq 50

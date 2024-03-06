@@ -14,11 +14,10 @@
 # 2 --> 3 + 5 = 8
 
 def row_sum_odd_numbers(n)
-  #your code here
   n * n * n
 end
 
-describe "Solution" do
+RSpec.describe "Solution" do
   it "Fixed tests" do
     expect(row_sum_odd_numbers(1)).to eq 1
     expect(row_sum_odd_numbers(2)).to eq 8
